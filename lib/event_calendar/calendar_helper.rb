@@ -212,7 +212,7 @@ module EventCalendar
                 class_name = event.class.name.tableize.singularize
 
                 cal << %(<td class="ec-event-cell" colspan="#{(dates[1]-dates[0]).to_i + 1}" )
-                cal << %(style="padding-top: #{options[:event_margin]}px;">)
+                cal << %(style="margin: #{options[:event_margin]}px;">)
                 cal << %(<div id="ec-#{class_name}-#{event.id}" class="ec-event )
                 if class_name != "event"
                   cal << %(ec-#{class_name} )
